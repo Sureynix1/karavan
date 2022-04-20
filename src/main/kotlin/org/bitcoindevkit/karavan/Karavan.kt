@@ -61,7 +61,7 @@ class WalletController(val walletService: WalletService) {
                 val cookieReplacement = Cookie(cookie.name, null)
                 cookieReplacement.path = "/wallet"
                 cookieReplacement.isHttpOnly = true
-                cookie.maxAge = 0
+                cookieReplacement.maxAge = 0
                 response.addCookie(cookieReplacement)
             }
             "Wallet is closed!\n"
